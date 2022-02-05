@@ -1097,7 +1097,7 @@ def safe_console():
 
         sys.stdout = SafeWriter(sys.stdout)
         # sys.stderr = SafeWriter(sys.stderr)
-        print("Encodign in %s" % locale.getpreferredencoding())
+        print("Encoding in %s" % locale.getpreferredencoding())
 
 
 def norm(x, encoding="latin1"):
