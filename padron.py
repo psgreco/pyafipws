@@ -254,7 +254,7 @@ class PadronAFIP(object):
     @inicializar_y_capturar_excepciones_simple
     def Procesar(self, filename="padron.txt", borrar=False):
         "Analiza y crea la base de datos interna sqlite para consultas"
-        f = open(filename, "r")
+        f = open(filename, "r", encoding='iso-8859-1')
         keys = [k for k, l, t, d in FORMATO]
         # conversion a planilla csv (no usado)
         if False and not os.path.exists("padron.csv"):
