@@ -959,7 +959,7 @@ class FEPDF(object):
             elements=self.elements,
             format=papel,
             orientation=orientacion,
-            title="%s %s %s" % (tipo.encode("latin1", "ignore"), letra, nro),
+            title="%s %s %s" % (tipo.encode("latin1", "ignore").decode(), letra, nro),
             author="CUIT %s" % self.CUIT,
             subject="CAE %s" % fact["cae"],
             keywords="AFIP Factura Electrónica",
